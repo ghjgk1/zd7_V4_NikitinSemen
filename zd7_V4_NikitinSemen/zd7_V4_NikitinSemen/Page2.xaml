@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd7_V4_NikitinSemen.Page2">
+    <ContentPage.Resources>
+        <StyleSheet Source="mystyles.css">
+        </StyleSheet>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="0, 15, 0, 0">
+            <Label Padding="0, 0, 0, 10"
+                   Text="Информация о туре"
+                FontAttributes="Italic"
+                FontSize="24"
+                TextColor="Blue" />
+            <Image x:Name="Source" Aspect="AspectFill" HeightRequest="180" />
+
+            <Label
+                x:Name="Name"
+            />
+            <Label                 
+                x:Name="Country"
+            />         
+            <Label                 
+                x:Name="Category"
+            />
+            <Label                 
+                x:Name="Cost"
+            />
+            <Label                 
+                x:Name="Turoperator"
+            />
+            <Label                 
+                x:Name="Description"
+            />
+            
+            <Label Text="Количество человек:" />
+            <Entry x:Name="Traveler" Keyboard="Numeric" Background="#2c2f34" TextColor="White"/>
+
+            <!-- Срок (месяцев) -->
+            <Label Text="Срок (дней):" />
+            <Entry x:Name="Day" Keyboard="Numeric" Background="#2c2f34" TextColor="White"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Выбор тура" Clicked="Back" FontSize="14"/>
+                <Button Text="Расчет стоимости тура" Clicked="OnCalculateCostClicked" FontSize="14"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

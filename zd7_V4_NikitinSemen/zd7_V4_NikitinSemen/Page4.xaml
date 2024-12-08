@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd7_V4_NikitinSemen.Page4">
+    <ContentPage>
+        <ContentPage.Resources>
+            <StyleSheet Source="mystyles.css" />
+        </ContentPage.Resources>
+        <StackLayout Padding="55">
+            <Label 
+                Padding="25"
+                Text="Турфирма"
+                FontSize="25"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                VerticalOptions="End" />
+
+            <Entry 
+                x:Name="usernameEntry"
+                Placeholder="Username"
+                Keyboard="Text" />
+
+            <Entry 
+                x:Name="passwordEntry"
+                Placeholder="Password"
+                IsPassword="True" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <ContentPage.Resources>
+            <StyleSheet Source="mystyles.css">
+            </StyleSheet>
+        </ContentPage.Resources>
+        <ContentPage.Content>
+            <StackLayout Padding="0, 25, 0, 0">
+                <Label Text="Онлайн-турфирма (выбор и заказ туров)"
+                       FontAttributes="Italic"
+                       FontSize="24"
+                       TextColor="Blue" />
+
+                <CarouselView x:Name="carouselView" ItemsSource="{Binding Tours}">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="75">
+                                <Image Source="{Binding ImageUrl}" Aspect="AspectFill" HeightRequest="200" />
+                                <Label x:Name="nameLabel"
+                                       Text="{Binding Name}" FontSize="24" />
+                                <Label Text="{Binding Country}" />
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text= "Стоимость:" />
+                                    <Label Text= "{Binding Cost}" />
+                                </StackLayout>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+
+                    <Button Text="Просмотр информации по туру" Clicked="OnInfoTourClicked" FontSize="14"/>
+                    <Button Text="Расчет стоимости тура" Clicked="OnCalculateCostClicked" FontSize="14"/>
+
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+</CarouselPage>

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zd7_V4_NikitinSemen.Android", "zd7_V4_NikitinSemen.Android\zd7_V4_NikitinSemen.Android.csproj", "{8FA1AE54-2198-4985-AC6F-0E85EE1398B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zd7_V4_NikitinSemen", "zd7_V4_NikitinSemen\zd7_V4_NikitinSemen.csproj", "{37A9ACD3-BC68-4B7E-A6F8-8A956E12808F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{C5EC1030-29E3-489B-8DED-2ECE9653A910}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FA1AE54-2198-4985-AC6F-0E85EE1398B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA1AE54-2198-4985-AC6F-0E85EE1398B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA1AE54-2198-4985-AC6F-0E85EE1398B4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8FA1AE54-2198-4985-AC6F-0E85EE1398B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA1AE54-2198-4985-AC6F-0E85EE1398B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FA1AE54-2198-4985-AC6F-0E85EE1398B4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{37A9ACD3-BC68-4B7E-A6F8-8A956E12808F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37A9ACD3-BC68-4B7E-A6F8-8A956E12808F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37A9ACD3-BC68-4B7E-A6F8-8A956E12808F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{37A9ACD3-BC68-4B7E-A6F8-8A956E12808F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37A9ACD3-BC68-4B7E-A6F8-8A956E12808F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37A9ACD3-BC68-4B7E-A6F8-8A956E12808F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96144B94-8C37-4063-9CAC-1D3327D83B44}
+	EndGlobalSection
+EndGlobal
